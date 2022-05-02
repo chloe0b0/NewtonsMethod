@@ -3,7 +3,7 @@
 #include <math.h>
 
 double f(double x){
-    return pow(x, 2) - 2.0;
+    return x*x - 2.0;
 }
 
 double f_(double x){
