@@ -15,8 +15,8 @@ double NewtonsMethod(double (*f)(double), double (*f_)(double), unsigned int max
     x0 = 1.0;
 
     for (int i = 0; i < max_iters; ++i){
-        y = f(x0);
-        y_ = f_(x0);
+        y = (*f)(x0);
+        y_ = (*f_)(x0);
 
         x1 = x0 - (y/y_);
         x0 = x1;
